@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.test-section {
+  width: 100%;
+  height: 100vh;
+}
+
+ul {
+  background-color: aquamarine;
+}
+
+@media (max-width: 768px) {
+  span {
+    background-color: yellow;
+    color: red;
+  }
+}/*# sourceMappingURL=style.css.map */

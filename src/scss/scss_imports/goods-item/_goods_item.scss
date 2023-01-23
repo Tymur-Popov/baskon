@@ -1,0 +1,328 @@
+// FIRST SLIDER
+
+.goods-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0 19px 0;
+  width: 245px !important;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+
+  cursor: pointer;
+
+  position: relative;
+
+  @media (max-width: 767.99px) {
+    width: 167px !important;
+    height: 337px;
+    padding: 10px 10px 19px 10px;
+  }
+
+  &__img {
+    margin-bottom: 9px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 9px;
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 9px;
+  }
+
+  &__rating {
+    margin-bottom: 8px;
+  }
+
+  &__price {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__price-sale {
+    text-decoration: line-through;
+    text-decoration-color: rgba(0, 0, 0, 0.75);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__buyBtn {
+    position: absolute;
+    width: 100%;
+    bottom: -56px;
+    left: 0;
+
+    height: 56px;
+    background: #ffa000;
+    box-shadow: 0px 4px 4px #c67100;
+    border-radius: 0px 0px 10px 10px;
+    color: #fff;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__discount {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    background: #ff4949;
+    border-radius: 0px 3px 3px 0px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #ffffff;
+
+    width: 70px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 767.99px) {
+      width: 48px;
+      height: 25px;
+    }
+  }
+
+  &__promotion {
+    position: absolute;
+    left: 0;
+    top: 48px;
+    width: 70px;
+    height: 22px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #ffffff;
+
+    background: #ffa000;
+    border-radius: 0px 3px 3px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.goods-item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12), 0px 12px 12px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+
+  @media (max-width: 767.99px) {
+    box-shadow: none;
+    border-radius: 10px;
+    border: 1px solid #d9d9d9;
+  }
+}
+
+.goods-item:hover > .goods-item__buyBtn {
+  display: flex;
+
+  @media (max-width: 767.99px) {
+    display: none;
+  }
+}
+
+.likeItem {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.likeItem:focus svg path {
+  fill: #ff4949;
+}
+
+.addToCart {
+  position: absolute;
+  top: 38px;
+  right: 9px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.addToCart:focus svg path {
+  fill: #58ab60;
+}
+
+// SLIDER 2
+
+.goods-item2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 195px !important;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+
+  transition-duration: 0.2s;
+
+  &:hover {
+    scale: 1.03;
+  }
+
+  & a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  & div:nth-child(2) {
+    padding: 16px 0 13px 0;
+  }
+
+  &__img {
+    width: 100%;
+    position: relative;
+    padding: 21px 23px 26px 23px;
+  }
+
+  &__img.item1 {
+    background: no-repeat center/cover url(../img/products/dog-background.png);
+  }
+
+  &__img.item2 {
+    background: no-repeat center/cover
+      url(../img/products/headphones-background.png);
+  }
+
+  &__img.item3 {
+    background: no-repeat center/cover
+      url(../img/products/gaming-background.png);
+  }
+
+  &__img.item4 {
+    background: no-repeat center/cover url(../img/products/food-background.png);
+  }
+
+  &__img.item5 {
+    background: no-repeat center/cover
+      url(../img/products/plants-background.png);
+  }
+
+  &__img.item6 {
+    background: no-repeat center/cover url(../img/products/decor-background.png);
+  }
+
+  &__img img {
+    width: 100%;
+  }
+
+  // &__overlay {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: rgba(20, 0, 120, 0.2);
+  //   backdrop-filter: blur(10.5px);
+  //   /* Note: backdrop-filter has minimal browser support */
+
+  //   border-radius: 10px 10px 0px 0px;
+  //   top: 0;
+  //   left: 0;
+  // }
+}
+
+// SLIDER 3
+
+.goods-item3 {
+  display: flex;
+  align-items: center;
+  transition-duration: 0.2s;
+}
+
+.goods-item3:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+.goods-item3_img {
+  background-color: #fff;
+}
+
+.splide__list3 {
+  padding-bottom: 24px;
+  padding-top: 40px;
+}
+
+//MOBILE SLIDES
+
+// .goods-item-mobile {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   text-align: center;
+//   padding: 10px 0 19px 0;
+//   width: 167px;
+
+//   border: 1px solid #d9d9d9;
+//   border-radius: 10px;
+
+//   font-family: "Montserrat", sans-serif;
+//   color: rgba(0, 0, 0, 0.75);
+
+//   cursor: pointer;
+
+//   position: relative;
+// }
+
+.mobile-category-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  gap: 10px;
+
+  & a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 120px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.75);
+  }
+}
