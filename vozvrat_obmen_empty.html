@@ -290,7 +290,6 @@
               </button>
             </form>
           </div>
-          
         </div>
       </div>
 
@@ -304,22 +303,26 @@
             <div class="user-page__left-menu-avatar">
               <form class="change-avatar change-avatar-hidden" action="">
                 <div class="change-avatar__img">
-                  <img src="img/users/add-photo.png" alt="">
+                  <img src="img/users/add-photo.png" alt="" />
                 </div>
-                <input id="avatar-input" type="file" name="avatar">
+                <input id="avatar-input" type="file" name="avatar" />
                 <label for="avatar-input">Загрузить фото</label>
                 <button type="submit">Сохранить</button>
                 <div class="close-change-avatar">Отмена</div>
               </form>
               <div class="user-page__left-menu-avatar-wrapper">
-                <img class="user-page__left-menu-avatar-img" src="img/users/user-cabinet.png" alt="" />
+                <img
+                  class="user-page__left-menu-avatar-img"
+                  src="img/eagle-avatar.png"
+                  alt=""
+                />
               </div>
               <div class="user-page__left-menu-avatar-info">
                 <p>Олег Коваленко-Ковальчук</p>
                 <p>elektronnaya.poshta@gmail.com</p>
               </div>
               <div class="user-page__left-menu-avatar-mobile-btn">
-                <img src="img/svg/arrow-down-bold.svg" alt="">
+                <img src="img/svg/arrow-down-bold.svg" alt="" />
               </div>
             </div>
             <ul class="user-page__left-menu-nav hidden-left-menu-nav">
@@ -355,19 +358,25 @@
               </li>
               <li>
                 <a href="#">
-                  <div class="user-page__left-menu-nav-img seller-sales-analitycs"></div>
+                  <div
+                    class="user-page__left-menu-nav-img seller-sales-analitycs"
+                  ></div>
                   <p>Аналитика продаж</p>
                 </a>
               </li>
               <li>
                 <a href="/user_page_zaprosi.html">
-                  <div class="user-page__left-menu-nav-img seller-sold-goods"></div>
+                  <div
+                    class="user-page__left-menu-nav-img seller-sold-goods"
+                  ></div>
                   <p>Проданные товары</p>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <div class="user-page__left-menu-nav-img seller-return-exchange"></div>
+                  <div
+                    class="user-page__left-menu-nav-img seller-return-exchange"
+                  ></div>
                   <p>Возврат/Обмен</p>
                 </a>
               </li>
@@ -379,13 +388,17 @@
               </li>
               <li>
                 <a href="/user_page_pay_for_friend.html">
-                  <div class="user-page__left-menu-nav-img seller-payments"></div>
+                  <div
+                    class="user-page__left-menu-nav-img seller-payments"
+                  ></div>
                   <p>Платежи</p>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <div class="user-page__left-menu-nav-img seller-become-customer"></div>
+                  <div
+                    class="user-page__left-menu-nav-img seller-become-customer"
+                  ></div>
                   <p>Стать покупателем</p>
                 </a>
               </li>
@@ -393,11 +406,12 @@
             <a href="/" class="logout hidden-logout">Выйти</a>
           </div>
 
-          <div class="user-page__right-side">
-            <img class="user-page__right-side-empty-img" src="img/users/user-page-empty.png" alt="">
-          </div>
+          <div class="user-page__right-side vozvrat-obmen-empty">
+            <h2>Возврат/Обмен</h2>
+            <p>Список заявок пуст</p>
+            <img src="img/vozvrat-obmen-empty.png" alt="">  
+            </div>
         </div>
-      </div>
 
       <footer class="footer">
         <div class="go-top-btn">
@@ -487,6 +501,6 @@
       type="module"
       src="js/splide-4.1.3/splide-4.1.3/dist/js/splide.min.js"
     ></script>
-    <script type="module" src="/js/cabinet.js"></script>
+    <script type="module" src="/js/sold-items.js"></script>
   </body>
 </html>

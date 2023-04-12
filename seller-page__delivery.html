@@ -290,114 +290,79 @@
               </button>
             </form>
           </div>
-          
         </div>
       </div>
 
-      <div class="user-page">
-        <div class="user-page__wrapper">
-          <div class="user-page__left-menu">
-            <div class="user-page__left-menu-name-number">
-              <p>Клиент:</p>
-              <p>0023560241</p>
-            </div>
-            <div class="user-page__left-menu-avatar">
-              <form class="change-avatar change-avatar-hidden" action="">
-                <div class="change-avatar__img">
-                  <img src="img/users/add-photo.png" alt="">
+
+      <div class="create-delivery">
+        <div class="create-delivery__wrapper">
+            <h2>Условия доставки</h2>
+            <form action="">
+                <div class="create-delivery__select-wrapper item-placement">
+                    <label for="">Местонахождение товара</label>
+                    <select>
+                    <option value="hurr">г. Киев, ул. Шевченко, д. 6</option>
+                    <option value="durr">г. Киев, ул. Шевченко, д. 6</option>
+                    </select>
                 </div>
-                <input id="avatar-input" type="file" name="avatar">
-                <label for="avatar-input">Загрузить фото</label>
-                <button type="submit">Сохранить</button>
-                <div class="close-change-avatar">Отмена</div>
-              </form>
-              <div class="user-page__left-menu-avatar-wrapper">
-                <img class="user-page__left-menu-avatar-img" src="img/users/user-cabinet.png" alt="" />
-              </div>
-              <div class="user-page__left-menu-avatar-info">
-                <p>Олег Коваленко-Ковальчук</p>
-                <p>elektronnaya.poshta@gmail.com</p>
-              </div>
-              <div class="user-page__left-menu-avatar-mobile-btn">
-                <img src="img/svg/arrow-down-bold.svg" alt="">
-              </div>
-            </div>
-            <ul class="user-page__left-menu-nav hidden-left-menu-nav">
-              <li class="current">
-                <a href="/user_page_personal_info.html">
-                  <div class="user-page__left-menu-nav-img catalog"></div>
-                  <p>Мои товары</p>
-                </a>
-              </li>
-              <li>
-                <a href="/catalogue.html">
-                  <div class="user-page__left-menu-nav-img seller-drafts"></div>
-                  <p>Черновик</p>
-                </a>
-              </li>
-              <li>
-                <a href="/user_page_recently_viewed.html">
-                  <div class="user-page__left-menu-nav-img seller-ads"></div>
-                  <p>Реклама товаров</p>
-                </a>
-              </li>
-              <li>
-                <a href="/my_orders.html">
-                  <div class="user-page__left-menu-nav-img seller-sales"></div>
-                  <p>Мои продажи</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="user-page__left-menu-nav-img messages"></div>
-                  <p>Сообщения</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="user-page__left-menu-nav-img seller-sales-analitycs"></div>
-                  <p>Аналитика продаж</p>
-                </a>
-              </li>
-              <li>
-                <a href="/user_page_zaprosi.html">
-                  <div class="user-page__left-menu-nav-img seller-sold-goods"></div>
-                  <p>Проданные товары</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="user-page__left-menu-nav-img seller-return-exchange"></div>
-                  <p>Возврат/Обмен</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="user-page__left-menu-nav-img seller-rating"></div>
-                  <p>Мой рейтинг</p>
-                </a>
-              </li>
-              <li>
-                <a href="/user_page_pay_for_friend.html">
-                  <div class="user-page__left-menu-nav-img seller-payments"></div>
-                  <p>Платежи</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="user-page__left-menu-nav-img seller-become-customer"></div>
-                  <p>Стать покупателем</p>
-                </a>
-              </li>
-            </ul>
-            <a href="/" class="logout hidden-logout">Выйти</a>
-          </div>
-
-          <div class="user-page__right-side">
-            <img class="user-page__right-side-empty-img" src="img/users/user-page-empty.png" alt="">
-          </div>
+                <p>Доставка в стране местонахождения</p>
+                <div class="select-group-wrapper delivery-in-current-country">
+                    <div class="create-delivery__select-wrapper">
+                        <label for="">Виды доставки</label>
+                        <select>
+                        <option value="hurr">Нова почта</option>
+                        <option value="durr">Нова почта</option>
+                        </select>
+                    </div>
+                    <div class="create-delivery__select-wrapper">
+                        <label for="">Стоимость
+                        </label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="create-delivery__select-wrapper">
+                        <label for="">Время обработки</label>
+                        <select>
+                        <option value="hurr">2 дня</option>
+                        <option value="durr">2 дня</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="create-delivery__checkbox-section create-delivery-checkbox">
+                    <div class="catalogue__filter-brand-checkbox-item">
+                        <input class="catalogue__checkbox-brand3 visually-hidden-checkbox" type="checkbox" id="brand3" checked>
+                        <label class="catalogue__checkbox-label-brand3" for="brand3">Самовывоз</label>
+                      </div>
+                      <div class="catalogue__filter-brand-checkbox-item">
+                        <input class="catalogue__checkbox-brand3 visually-hidden-checkbox" type="checkbox" id="brand4">
+                        <label class="catalogue__checkbox-label-brand4" for="brand4">Бесплатная доставка</label>
+                      </div>
+                </div>
+                <p>Международная доставка</p>
+                <div class="select-group-wrapper international-delivery">
+                    <div class="create-delivery__select-wrapper">
+                        <label for="">Отправка до:</label>
+                        <select>
+                        <option value="hurr">2000 км</option>
+                        <option value="durr">2000 км</option>
+                        </select>
+                    </div>
+                    <div class="create-delivery__select-wrapper">
+                        <label for="">Виды доставки</label>
+                        <select>
+                        <option value="hurr">Нова почта</option>
+                        <option value="durr">Нова почта</option>
+                        </select>
+                    </div>
+                    <div class="create-delivery__select-wrapper">
+                        <label for="">Стоимость
+                        </label>
+                        <input type="text" name="" id="">
+                    </div>
+                </div>
+            </form>
         </div>
       </div>
+
 
       <footer class="footer">
         <div class="go-top-btn">
@@ -487,6 +452,6 @@
       type="module"
       src="js/splide-4.1.3/splide-4.1.3/dist/js/splide.min.js"
     ></script>
-    <script type="module" src="/js/cabinet.js"></script>
+    <script type="module" src="/js/sold-items.js"></script>
   </body>
 </html>
